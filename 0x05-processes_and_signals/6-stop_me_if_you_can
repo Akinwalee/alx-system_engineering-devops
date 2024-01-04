@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Stop 4-to_infinity_and_beyond without using kill
+#pid=$( ps aux | grep "[4]-to_infinity_and_beyond" | grep "S+" | awk '{print $2}' )
+
+pid=$( pkill -f 4-to_infinity_and_beyond )
+kill "$pid"
