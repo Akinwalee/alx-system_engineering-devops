@@ -6,7 +6,7 @@
 x=0
 
 sigterm_handler(){
-	echo "I am invicible!!!"
+	echo "I am invincible!!!"
 }
 
 trap 'sigterm_handler' SIGINT SIGTERM
