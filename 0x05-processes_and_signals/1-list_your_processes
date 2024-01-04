@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Displays all runing process including those without TTY
 
-ps -axjf
+ps auxf
