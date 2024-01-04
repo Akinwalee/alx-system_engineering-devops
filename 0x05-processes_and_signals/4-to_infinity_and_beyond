@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Displays To infinty and beyond indefinitely
+# adding sleep 2 between each iteration
+
+x=0
+
+while [ $x -lt 10 ];
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
