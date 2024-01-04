@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Displays To infinty and beyond indefinitely
+# adding sleep 2 between each iteration
+# Ignores SIGTERM
+
+x=0
+
+sigterm_handler(){
+	echo "I am invicible!!!"
+}
+
+trap 'sigterm_handler' SIGINT SIGTERM
+
+while [ $x -lt 10 ];
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
