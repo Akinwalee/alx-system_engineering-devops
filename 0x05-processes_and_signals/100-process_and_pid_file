@@ -16,14 +16,15 @@ sigint_handler() {
 }
 sig_quit() {
 	sudo rm -r /var/run/myscript.pid
-	exit 0/var/run/myscript.pid
+	exit 0
 }
 
 trap 'sigterm_handler' SIGTERM
 trap 'sigint_handler' SIGINT
 trap 'sig_quit' SIGQUIT
-
-sudo echo "$$" > /var/run/myscript.pid
+ 
+sudo touch /var/run/myscript.pid
+echo "$$" > /var/run/myscript.pid
 
 while true;
 do
