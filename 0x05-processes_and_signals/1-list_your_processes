@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Displays all runing process including those without TTY
+
+top
