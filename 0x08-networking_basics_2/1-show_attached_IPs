@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Displays all active IPv4 IPs on a machine
+
+ip -o -4 addr show | awk '"$3" != "lo" {print $4}'
