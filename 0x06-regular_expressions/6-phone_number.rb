@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
 # matches h......
 
-puts ARGV[0].scan(/[\d]{10}/).join
+puts ARGV[0].scan(/[\s]\d{10}/).join
