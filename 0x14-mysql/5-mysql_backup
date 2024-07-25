@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# Create a dump file from mysql and compress it
 
 USER="root"
 PASS="$1"
