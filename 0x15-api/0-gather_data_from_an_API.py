@@ -4,7 +4,6 @@ Python scrpts to gather data from an API.
 This script gets an employee detials from the API
 and display as specified.
 """
-
 import requests
 import sys
 
