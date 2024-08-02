@@ -26,6 +26,6 @@ if __name__ == "__main__":
             count += 1
             complete.append(task["title"])
 
-    print(f"Employee {name} is done with tasks({count}/{len(tasks)})")
+    print(f"Employee {name} is done with tasks({count}/{len(tasks)}):")
     for title in complete:
         print(f"\t {title}")
