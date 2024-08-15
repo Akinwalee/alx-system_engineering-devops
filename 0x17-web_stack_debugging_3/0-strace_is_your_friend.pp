@@ -8,12 +8,12 @@ file { '/var/www/html/wordpress':
 }
 
 # Ensure the Apache configuration is correct (for example, setting correct ownership)
-file { '/etc/apache2/apache2.conf':
-  ensure  => file,
-  owner   => 'root',
-  group   => 'root',
-  mode    => '0644',
-}
+#file { '/etc/apache2/apache2.conf':
+#  ensure  => file,
+#  owner   => 'root',
+#  group   => 'root',
+#  mode    => '0644',
+#}
 
 # Restart Apache to apply any changes
 service { 'apache2':
