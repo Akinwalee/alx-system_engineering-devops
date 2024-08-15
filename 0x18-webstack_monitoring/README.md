@@ -1,1 +1,1 @@
-Web Monitoring with DataDog
+Web Stack Monitoring with DataDog
